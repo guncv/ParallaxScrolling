@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@studio-freight/lenis': ^1.0.29
   '@types/node': ^20
   '@types/react': ^18
   '@types/react-dom': ^18
@@ -16,6 +17,7 @@ specifiers:
   typescript: ^5
 
 dependencies:
+  '@studio-freight/lenis': 1.0.29
   framer-motion: 10.16.14_biqbaboplfbrettd7655fr4n2y
   next: 14.0.3_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
@@ -266,6 +268,10 @@ packages:
   /@rushstack/eslint-patch/1.6.0:
     resolution: {integrity: sha512-2/U3GXA6YiPYQDLGwtGlnNgKYBSwCFIHf8Y9LUY5VATHdtbLlU0Y1R3QoBnT0aB4qv/BEiVVsj7LJXoQCgJ2vA==}
     dev: true
+
+  /@studio-freight/lenis/1.0.29:
+    resolution: {integrity: sha512-z/qS8ato5m2wlxQREYj5iALcxMrhhm06vEiLqYzLI+3HmpPzPscmJ8cXNiay4bj692vOot2hyTA3WP++AQVoKA==}
+    dev: false
 
   /@swc/helpers/0.5.2:
     resolution: {integrity: sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==}

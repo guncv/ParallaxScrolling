@@ -2,8 +2,9 @@
 import Image from 'next/image'
 import styles from "@/app/page.module.css"
 import {useTransform, useScroll, motion} from "framer-motion"
-import {useRef} from "react"
+import {useEffect, useRef} from "react"
 import Lenis from '@studio-freight/lenis'
+import useDimension from "../useDimension"
 
 const images = [
   "image1.jpg",
@@ -22,11 +23,23 @@ const images = [
  
 export default function Home() {
   const container = useRef(null);
+  const {height} = useDimension()
   const {scrollYProgress} = useScroll({
     target: container,
     offset: ['start end','end start']
   })
   const y = useTransform(scrollYProgress,[0,1],[0,2000])
+
+  useEffect(() => {
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+  })
 
   return (
     <main className={styles.main}>
